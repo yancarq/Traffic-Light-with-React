@@ -12,7 +12,9 @@ export function Home() {
 		<div>
 			<div className="container text-center">
 				<div className="flow bg-dark"></div>
-				<div className="square p-3 bg-dark">
+				<div
+					className="square p-3 bg-dark"
+					onMouseLeave={() => lightON("")}>
 					<div
 						className={`redLight ${light == "red" ? "light" : ""}`}
 						onClick={() => lightON("red")}></div>
